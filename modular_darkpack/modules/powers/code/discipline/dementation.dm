@@ -488,3 +488,10 @@ determines the duration.
 			skip_nearby = FALSE, \
 		)
 	addtimer(CALLBACK(src, PROC_REF(remove_dementation_overlay), attack_target), duration_length + (mypower SECONDS))
+
+// CORVAX EDIT ADD
+/datum/discipline_power/dementation/total_insanity/remove_dementation_overlay(mob/living/carbon/human/target)
+	. = ..()
+	if(attack_target == target)
+		attack_target = null
+// CORVAX EDIT ADD END

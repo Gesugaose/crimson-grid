@@ -22,7 +22,3 @@
 /obj/item/urn/proc/on_owner_deleted(datum/source)
 	SIGNAL_HANDLER
 	own = null
-
-/datum/discipline_power/serpentis/the_heart_of_darkness/proc/on_urn_deleted(datum/source)
-	SIGNAL_HANDLER
-	urn = null

@@ -334,3 +334,9 @@
 	. = ..()
 	if(own && !QDELETED(own)) // CORVAX EDIT CHANGE - ORIGINAL: if(own)
 		own.death()
+
+// CORVAX EDIT ADD
+/datum/discipline_power/serpentis/the_heart_of_darkness/proc/on_urn_deleted(datum/source)
+	SIGNAL_HANDLER
+	urn = null
+// CORVAX EDIT ADD END
